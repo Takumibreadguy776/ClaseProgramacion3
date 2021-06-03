@@ -18,7 +18,7 @@ public class arreglo1 : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            Instantiate(Array[Random.Range(0,3)]);
+            Instantiate(Array[Random.Range(0,4)]);
         }
     }
 }
