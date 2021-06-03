@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class arreglo1 : MonoBehaviour
 {
+
+    public GameObject[] Array;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,9 @@ public class arreglo1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("space"))
+        {
+            Instantiate(Array[Random.Range(0,3)]);
+        }
     }
 }
