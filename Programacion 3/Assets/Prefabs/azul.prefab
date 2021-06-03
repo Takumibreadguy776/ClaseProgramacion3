@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 1806274772957549177}
   - component: {fileID: 3806986788418926240}
   - component: {fileID: 4916623342067825029}
-  - component: {fileID: -8871780407361202644}
+  - component: {fileID: -5702122502541923536}
+  - component: {fileID: -2828359739642716682}
   m_Layer: 0
   m_Name: azul
-  m_TagString: Untagged
+  m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +106,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-8871780407361202644
+--- !u!114 &-5702122502541923536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,3 +118,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1996b0c52973864f8676751bb522481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &-2828359739642716682
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6529590290667900813}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.32

@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class DestroyOnTime : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        Destroy(gameObject, 1);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+       if(other.gameObject.tag == "Edge")
+        {
+            Destroy(gameObject);
+        }
+            
     }
 }
