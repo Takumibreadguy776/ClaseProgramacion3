@@ -7,18 +7,40 @@ public class arreglo1 : MonoBehaviour
 
     public GameObject[] Array;
 
-    // Start is called before the first frame update
+
+    [SerializeField]
+    private GameObject[] enemyPrefab;
+    private int spawnIndex;
+    private Transform[] spawnpoints;
+    private Vector3 spawnPos;
+    private int count;
+
     void Start()
     {
+        count = transform.childCount;
+        spawnpoints = new Transform[count];
+        for (int i = 0; i < count; i++)
+        {
+            spawnpoints[i] = transform.GetChild(i);
+        }
+
         
     }
 
-    // Update is called once per frame
+    void spawnEnemys()
+    {
+        spawnIndex = Random.Range(0, count);
+
+        Instantiate(enemyPrefab[Random.Range(0, 4)], spawnpoints[spawnIndex].position, enemyPrefab[Random.Range(0, 4)].transform.rotation);
+    }
+
+     
     void Update()
     {
         if (Input.GetKeyDown("space"))
         {
-            Instantiate(Array[Random.Range(0,4)]);
+            spawnEnemys();
         }
     }
+    
 }

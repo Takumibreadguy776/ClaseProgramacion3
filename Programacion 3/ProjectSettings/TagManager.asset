@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Edge
   - ball
+  - spawn
   layers:
   - Default
   - TransparentFX
