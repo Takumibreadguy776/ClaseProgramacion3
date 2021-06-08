@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class arreglo1 : MonoBehaviour
 {
-
-    public GameObject[] Array;
-
-
     [SerializeField]
-    private GameObject[] enemyPrefab;
+    private GameObject[] prefab;
     private int spawnIndex;
     private Transform[] spawnpoints;
     private Vector3 spawnPos;
@@ -31,7 +27,7 @@ public class arreglo1 : MonoBehaviour
     {
         spawnIndex = Random.Range(0, count);
 
-        Instantiate(enemyPrefab[Random.Range(0, 4)], spawnpoints[spawnIndex].position, enemyPrefab[Random.Range(0, 4)].transform.rotation);
+        Instantiate(prefab[Random.Range(0, 4)], spawnpoints[spawnIndex].position, prefab[Random.Range(0, 4)].transform.rotation);
     }
 
      
