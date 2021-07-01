@@ -17,5 +17,9 @@ public class EnemyFollow : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, Target.position, speed * Time.deltaTime);
+
+
+
+
     }
 }
