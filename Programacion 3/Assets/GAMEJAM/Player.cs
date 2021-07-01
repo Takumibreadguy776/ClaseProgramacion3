@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     Vector2 mousePOS;
 
 
-    // Update is called once per frame
+    //movimiento
     void Update()
     {
        movement.x = Input.GetAxisRaw("Horizontal");
@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
        mousePOS = cam.ScreenToWorldPoint(Input.mousePosition);
     }
-
+    //seguir Mouse
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * movespeed * Time.fixedDeltaTime);
