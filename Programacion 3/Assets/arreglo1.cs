@@ -23,7 +23,7 @@ public class arreglo1 : MonoBehaviour
         
     }
 
-    void spawnEnemys()
+    void spawnPrefab()
     {
         spawnIndex = Random.Range(0, count);
 
@@ -35,7 +35,7 @@ public class arreglo1 : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            spawnEnemys();
+            spawnPrefab();
         }
     }
     
