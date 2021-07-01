@@ -10,7 +10,7 @@ public class Disparar : MonoBehaviour
     public float bulletForce = 20f;
 
 
-    // Update is called once per frame
+    // llamar variable shoot
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))

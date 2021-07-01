@@ -4770,7 +4770,7 @@ GameObject:
   - component: {fileID: 519070491}
   m_Layer: 0
   m_Name: Soldado
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5017,6 +5017,7 @@ GameObject:
   - component: {fileID: 1749967024}
   - component: {fileID: 1749967023}
   - component: {fileID: 1749967026}
+  - component: {fileID: 1749967027}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -5117,6 +5118,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1996b0c52973864f8676751bb522481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1749967027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749967022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92d15b9dfe645ed47a1fd780aac83722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &1849064445
 GameObject:
   m_ObjectHideFlags: 0
