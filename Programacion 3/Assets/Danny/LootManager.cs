@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class LootManager : MonoBehaviour
 {
-    public int[] itemsrate = { 400, 300, 200, 100 };
+    public int rateDragon;
+    public EnemigoSCRIPTABLE enemySCRIPT;
+    private int[] itemsrate;
     public GameObject[] gems;
     public int total;
     public int randomnum;
 
+    private void FixedUpdate()
+    {
+        itemsrate = enemySCRIPT.lootrate;
+        rateDragon = enemySCRIPT.spawnrate;
+    }
+    
     public void randomLoot()
     {
         Debug.Log("ejecutamos el random loot");
