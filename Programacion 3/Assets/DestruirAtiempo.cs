@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyOnTime : MonoBehaviour
+public class DestruirAtiempo: MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D other)
     {
