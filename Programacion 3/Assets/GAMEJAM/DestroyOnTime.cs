@@ -11,6 +11,7 @@ public class DestroyOnTime : MonoBehaviour
     {
        if(other.gameObject.tag == "Edge")
         {
+            gameObject.GetComponent<LootManager>().randomLoot();
             Destroy(gameObject);
             Score.scoreValue += 1;
         }

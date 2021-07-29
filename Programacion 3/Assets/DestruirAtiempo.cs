@@ -9,6 +9,7 @@ public class DestruirAtiempo: MonoBehaviour
        if(other.gameObject.tag == "Edge")
         {
             Destroy(gameObject);
+            gameObject.GetComponent<LootManager>().randomLoot();
         }
             
     }

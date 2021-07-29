@@ -17,7 +17,7 @@ public class LootManager : MonoBehaviour
         //generar un numero random del tamaño total de el porcentaje de itemsrate. 820
         foreach(int item in itemsrate)
         {
-            total *= item;
+            total += item;
         }
 
         randomnum = Random.Range(0, total);
